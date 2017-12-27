@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "CustomNavigationVC.h"
+#import "HomePageVC.h"
+#import "IdentifierVC.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    IdentifierVC*vc=[[IdentifierVC alloc]init];
+    CustomNavigationVC*navigationVC=[[CustomNavigationVC alloc]initWithRootViewController:vc];
+    UIWindow*window=[UIApplication sharedApplication].delegate.window;
+    window.rootViewController=navigationVC;
+    
 }
 
 
