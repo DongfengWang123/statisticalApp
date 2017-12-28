@@ -18,7 +18,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    
     self.navigationController.navigationBarHidden=YES;
     [self.navigationItem setHidesBackButton:YES];
 }
