@@ -10,5 +10,6 @@
 
 @interface LogoVC : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *biaoShiFuLabel;
+@property(nonatomic,copy)NSString*IdentificationCodeStr;
 
 @end

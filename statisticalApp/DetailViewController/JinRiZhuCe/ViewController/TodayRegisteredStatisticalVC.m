@@ -8,70 +8,72 @@
 
 #import "TodayRegisteredStatisticalVC.h"
 #import "TodayRegisteredDetailCell.h"
-@interface TodayRegisteredStatisticalVC ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView*tableview;
+@interface TodayRegisteredStatisticalVC ()
 
 @end
 
 @implementation TodayRegisteredStatisticalVC
-{
-    NSMutableArray*titleArray;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     self.navigationItem.title=@"统计";
-    
-    titleArray=[[NSMutableArray alloc]initWithObjects:@"用户名:",@"投注总额:",@"中奖总额:",@"总返点:",@"总佣金:",@"充值:",@"体现:",@"余额:",@"个人总结算:",nil];
-    [self tableview];//创建tableview
+
+    [self getUserTongJiRequest];//对统计信息进行数据请求
     
 }
 
-//创建tableview
--(UITableView*)tableview
+#pragma mark------网络数据请求------网络数据请求------网络数据请求------网络数据请求------网络数据请求------网络数据请求------网络数据请求
+
+//对统计信息进行数据请求
+-(void)getUserTongJiRequest
 {
-    if (!_tableview)
-    {
-        _tableview=[[UITableView alloc]initWithFrame:CGRectMake(0,0, total_WIDTH, total_HEIGHT-64) style:UITableViewStylePlain];
+    NSMutableDictionary *params=[NSMutableDictionary dictionary];
+    params[@"deviceId"]=[PSGeneral getLocalData:@"deviceLogoStr"];
+    params[@"userId"]=self.selectStatisticalUserId;
+    HttpTool*request=[HttpTool request];
+    
+    [SVProgressHUD showWithStatus:@"网络数据加载中"];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    __weak typeof(self) weakSelf =self;
+    
+    [request post:baseUrl(getUserStatistical_Url) parameters:params swithSucess:^(NSDictionary *dic) {
         
-        if (@available(iOS 11.0, *)) {
-            _tableview.contentInsetAdjustmentBehavior = UIApplicationBackgroundFetchIntervalNever;
-        } else {
-            _tableview.translatesAutoresizingMaskIntoConstraints = NO;
+        [SVProgressHUD dismiss];
+        if (dic)
+        {
+            NSString*msg=VerifyJsonValue(dic[@"msg"]);
+            NSInteger status=[VerifyJsonValue(dic[@"status"]) integerValue];
+            
+            if (status==0)
+            {
+                 NSMutableDictionary*dataDic=VerifyJsonValue(dic[@"data"]);
+                
+                weakSelf.userNameLabel.text=[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"accountName"])];
+                weakSelf.touZhuZongELabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"bttingAmount"])]]];
+                weakSelf.zhongJiangZongELabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"winAmount"])]]];
+                weakSelf.zongFanDianLabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"rebateSum"])]]];
+                weakSelf.zongYongJinLabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"brokerageSum"])]]];
+                weakSelf.chongZhiLabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"recharge"])]]];
+                weakSelf.tiXianLabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"withdraw"])]]];
+                 weakSelf.yuELabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"surpluAsmount"])]]];
+                 weakSelf.geRenZongJieSuanLabel.text=[NSString stringWithFormat:@"%@",[PSGeneral changeFloat:[NSString stringWithFormat:@"%@",VerifyJsonValue(dataDic[@"summary"])]]];
+                
+                
+            }else
+            {
+                 [SVProgressHUD showErrorWithStatus:msg];
+            }
         }
-        _tableview.delegate=self;
-        _tableview.dataSource=self;
-        _tableview.rowHeight=45;
-        _tableview.estimatedRowHeight = 0;
-        _tableview.estimatedSectionHeaderHeight = 0;
-        _tableview.estimatedSectionFooterHeight = 0;
-        _tableview.separatorStyle=UITableViewCellSeparatorStyleNone;
-        [self.view addSubview:_tableview];
-    }
-    return _tableview;
+    } withFailed:^(NSString *error, int status) {
+        
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showErrorWithStatus:error];
+        
+    }];
 }
-
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 9;
-}
-
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString*cellID=@"TodayRegisteredDetailCell";
-    TodayRegisteredDetailCell*cell=[tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell)
-    {
-        cell=[[[NSBundle mainBundle]loadNibNamed:@"TodayRegisteredDetailCell" owner:nil options:nil]firstObject];
-    }
-    cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    cell.detailTitleLabel.text=titleArray[indexPath.row];
-    
-    return cell;
-}
-
 
 
 - (void)didReceiveMemoryWarning {

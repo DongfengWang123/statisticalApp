@@ -21,11 +21,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62e-P9-i23">
-                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <rect key="frame" x="0.0" y="613" width="375" height="54"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D03-dn-gJT">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="cy1-az-s5r"/>
                             </constraints>
@@ -34,12 +34,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPl-6l-pCg">
-                            <rect key="frame" x="0.0" y="1" width="187.5" height="44"/>
+                            <rect key="frame" x="0.0" y="1" width="187.5" height="53"/>
                             <color key="backgroundColor" red="0.082352941176470587" green="0.66666666666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="统计"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-8D-NMO">
-                            <rect key="frame" x="187.5" y="1" width="187.5" height="44"/>
+                            <rect key="frame" x="187.5" y="1" width="187.5" height="53"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <state key="normal" title="收支明细">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,7 +57,7 @@
                         <constraint firstAttribute="bottom" secondItem="6bG-8D-NMO" secondAttribute="bottom" id="IZv-Q7-uYq"/>
                         <constraint firstAttribute="trailing" secondItem="D03-dn-gJT" secondAttribute="trailing" id="Jic-t8-6Dy"/>
                         <constraint firstItem="mPl-6l-pCg" firstAttribute="top" secondItem="D03-dn-gJT" secondAttribute="bottom" id="MU2-7f-nN6"/>
-                        <constraint firstAttribute="height" constant="45" id="P6a-kf-zEE"/>
+                        <constraint firstAttribute="height" constant="54" id="P6a-kf-zEE"/>
                         <constraint firstItem="mPl-6l-pCg" firstAttribute="leading" secondItem="62e-P9-i23" secondAttribute="leading" id="Ytb-xr-6Tp"/>
                         <constraint firstItem="6bG-8D-NMO" firstAttribute="leading" secondItem="mPl-6l-pCg" secondAttribute="trailing" id="avt-ue-NnP"/>
                         <constraint firstItem="D03-dn-gJT" firstAttribute="top" secondItem="62e-P9-i23" secondAttribute="top" id="dG6-aP-Iq2"/>
@@ -66,7 +66,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="62e-P9-i23" secondAttribute="trailing" id="1Tk-Yf-lFd"/>
                 <constraint firstItem="62e-P9-i23" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5vd-wa-2h5"/>

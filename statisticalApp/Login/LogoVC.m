@@ -10,6 +10,7 @@
 #import "HomePageVC.h"
 //钥匙串+UUID
 #import "SSKeychain.h"
+#import "NSString+MD5.h"
 @interface LogoVC ()
 
 @end
@@ -68,10 +69,48 @@
 //确认按钮绑定的方法
 - (IBAction)sureBtnClick:(UIButton *)sender
 {
-    HomePageVC*VC=[[HomePageVC alloc]init];
-    [self.navigationController pushViewController:VC animated:YES];
+    
+    [self getToShenBeiShenQingRequest];
+
 }
 
+
+#pragma mark=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求=======网络数据请求
+//设备申请
+-(void)getToShenBeiShenQingRequest
+{
+    NSMutableDictionary *paramsDic=[NSMutableDictionary dictionary];
+    paramsDic[@"deviceId"]=[[self getDeviceId]MD5] ;
+    paramsDic[@"code"]=self.IdentificationCodeStr;
+    HttpTool*request=[HttpTool request];
+    
+    [SVProgressHUD showWithStatus:@"网络数据加载中"];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    [request post:baseUrl(deviceApply_Url) parameters:paramsDic swithSucess:^(NSDictionary *dic) {
+        [SVProgressHUD dismiss];
+        if (dic)
+        {
+            NSString*msg=VerifyJsonValue(dic[@"msg"]);
+            NSInteger status=[VerifyJsonValue(dic[@"status"]) integerValue];
+            if (status==0)
+            {
+                
+                [PSGeneral showInfo:@"申请成功,待管理员审核通过以后,请重新登录"];
+                
+            }else
+            {
+                [SVProgressHUD showErrorWithStatus:msg];
+            }
+            
+        }
+    } withFailed:^(NSString *error, int status) {
+        
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showErrorWithStatus:error];
+        
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

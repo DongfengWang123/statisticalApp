@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxN-Qz-bc7">
-                    <rect key="frame" x="0.0" y="623" width="187.5" height="44"/>
+                    <rect key="frame" x="0.0" y="613" width="187.5" height="54"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="SFd-8w-gbd"/>
+                        <constraint firstAttribute="height" constant="54" id="SFd-8w-gbd"/>
                     </constraints>
                     <state key="normal" title="统计">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,24 +34,38 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5Q-5I-Iat">
-                    <rect key="frame" x="187.5" y="623" width="187.5" height="44"/>
+                    <rect key="frame" x="187.5" y="613" width="187.5" height="54"/>
                     <color key="backgroundColor" red="0.08235294118" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="HbM-5Y-2yT"/>
+                        <constraint firstAttribute="height" constant="54" id="HbM-5Y-2yT"/>
                     </constraints>
                     <state key="normal" title="收支明细"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6b-ag-nE4">
+                    <rect key="frame" x="0.0" y="612" width="375" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="leo-8L-CxU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="E6b-ag-nE4" secondAttribute="trailing" id="6ga-jc-nJQ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="IxN-Qz-bc7" secondAttribute="bottom" id="H86-Pk-OB6"/>
+                <constraint firstItem="IxN-Qz-bc7" firstAttribute="top" secondItem="E6b-ag-nE4" secondAttribute="bottom" id="JfQ-hr-zA6"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="y5Q-5I-Iat" secondAttribute="trailing" id="T6y-ec-yaD"/>
                 <constraint firstItem="IxN-Qz-bc7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="YJr-fN-x7H"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="y5Q-5I-Iat" secondAttribute="bottom" id="aUG-Qm-kiy"/>
+                <constraint firstItem="E6b-ag-nE4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="fRZ-xh-wun"/>
                 <constraint firstItem="y5Q-5I-Iat" firstAttribute="leading" secondItem="IxN-Qz-bc7" secondAttribute="trailing" id="hZn-NE-ZhJ"/>
                 <constraint firstItem="y5Q-5I-Iat" firstAttribute="width" secondItem="IxN-Qz-bc7" secondAttribute="width" id="jrN-wo-owz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>

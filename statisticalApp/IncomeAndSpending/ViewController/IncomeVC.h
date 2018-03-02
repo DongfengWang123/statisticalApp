@@ -17,7 +17,24 @@
 @property (weak, nonatomic) IBOutlet UIButton *endTimeBtn;
 
 @property (weak, nonatomic) IBOutlet UIView *scrollowBgView;
+@property (weak, nonatomic) IBOutlet UIScrollView *bigScrollow;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollowHeightConstraint;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *ruZhangYuanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ruZhangBiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ruZhangRenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhiFuYuanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhiFuBiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhiFuRenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhuangZhuangYuanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhuangZhuangBiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zhuangZhuangRenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *buChangYuanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *buChangBiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *buChangRenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yongJinYuanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yongJinBiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yongJinRenLabel;
 @end

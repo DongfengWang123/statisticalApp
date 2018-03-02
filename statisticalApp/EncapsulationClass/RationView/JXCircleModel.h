@@ -17,5 +17,6 @@
 @property (nonatomic, strong)UIColor *color;
 /** name*/
 @property (nonatomic, strong)NSString *name;
-
+//总收入
+@property (nonatomic, strong)NSString *shouRuNumStr;
 @end

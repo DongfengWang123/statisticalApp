@@ -21,11 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbg" translatesAutoresizingMaskIntoConstraints="NO" id="5lT-E1-6hu">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-AZ-iDH">
-                    <rect key="frame" x="20" y="245" width="335" height="44"/>
+                    <rect key="frame" x="20" y="278" width="335" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标识符:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HR-dD-CJB">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
@@ -56,34 +53,39 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmz-je-lTY">
-                    <rect key="frame" x="20" y="309" width="335" height="44"/>
+                    <rect key="frame" x="20" y="362" width="335" height="44"/>
                     <color key="backgroundColor" red="0.08235294118" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="9jP-zx-PH2"/>
                     </constraints>
-                    <state key="normal" title="发送"/>
+                    <state key="normal" title="申请绑定"/>
                     <connections>
                         <action selector="sureBtnClick:" destination="-1" eventType="touchUpInside" id="7EY-pR-9Lc"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="mGx-hB-cDy">
+                    <rect key="frame" x="137.5" y="120" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="6KW-be-xSV"/>
+                        <constraint firstAttribute="width" constant="100" id="wvT-HL-5Q1"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="l8d-AZ-iDH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3eQ-Dw-amH"/>
-                <constraint firstItem="5lT-E1-6hu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9EZ-hD-7sa"/>
-                <constraint firstItem="l8d-AZ-iDH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="4:5" id="EzN-ZL-l8g"/>
+                <constraint firstItem="l8d-AZ-iDH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="9:10" id="EzN-ZL-l8g"/>
+                <constraint firstItem="mGx-hB-cDy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Idn-e6-rB2"/>
                 <constraint firstItem="l8d-AZ-iDH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KtJ-wn-67n"/>
                 <constraint firstAttribute="trailing" secondItem="Rmz-je-lTY" secondAttribute="trailing" constant="20" id="TEr-bb-YtI"/>
                 <constraint firstAttribute="trailing" secondItem="l8d-AZ-iDH" secondAttribute="trailing" constant="20" id="WLF-Pl-L7z"/>
-                <constraint firstAttribute="bottom" secondItem="5lT-E1-6hu" secondAttribute="bottom" id="hFW-wP-bld"/>
-                <constraint firstItem="Rmz-je-lTY" firstAttribute="top" secondItem="l8d-AZ-iDH" secondAttribute="bottom" constant="20" id="jxa-55-m4K"/>
-                <constraint firstItem="5lT-E1-6hu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tHV-A7-QBM"/>
+                <constraint firstItem="Rmz-je-lTY" firstAttribute="top" secondItem="l8d-AZ-iDH" secondAttribute="bottom" constant="40" id="jxa-55-m4K"/>
                 <constraint firstItem="Rmz-je-lTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="tN3-Ek-YEx"/>
-                <constraint firstAttribute="trailing" secondItem="5lT-E1-6hu" secondAttribute="trailing" id="y2H-M7-Oc5"/>
+                <constraint firstItem="mGx-hB-cDy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="ty9-M6-eNY"/>
             </constraints>
         </view>
     </objects>
     <resources>
-        <image name="bbg" width="320" height="480"/>
+        <image name="login" width="1024" height="1024"/>
     </resources>
 </document>

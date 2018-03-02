@@ -10,12 +10,12 @@
 #import "AFHTTPSessionManager.h"
 #import "Header.h"
 #import "SHAEncryption.h"
-#import "ErrorLoginView.h"
+#import "AESCrypt.h"
+#import "NSString+MD5.h"
 #define openKeyStr @"c67ecba48eb07165"
 
 @interface BaseRequest  ()
 
-@property(nonatomic,strong)ErrorLoginView*errorLoginView;
 
 @end
 
@@ -144,9 +144,7 @@
                 
             }else
             {
-                
-                [self createErrorLoginView];
-                _errorLoginView.errorContentLabel.text=@"网络异常";
+
             }
  
         }
@@ -401,13 +399,6 @@
     return securityPolicy;
 }
 
-//创建错误的提示框
--(void)createErrorLoginView
-{
-    _errorLoginView=[ErrorLoginView view];
-    UIWindow*window=[[UIApplication sharedApplication].delegate window];
-    _errorLoginView.frame=window.frame;
-    [window addSubview:_errorLoginView];
-}
+
 
 @end

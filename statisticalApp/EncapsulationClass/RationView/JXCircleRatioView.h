@@ -15,6 +15,8 @@
 
 @property(nonatomic,copy)NSString*shouRuNumStr;//收入的具体值
 
+@property(nonatomic,copy)NSString*shouRuLabelStr;//收入的名字
+
 - (instancetype)initWithFrame:(CGRect)frame andDataArray:(NSMutableArray *)dataArray CircleRadius:(CGFloat)circleRadius;
 
 @end

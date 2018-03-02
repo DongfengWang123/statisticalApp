@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280AE06A1FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE0691FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.m */; };
+		280AE06D1FFF326300A0198C /* TodayRegisteredRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE06C1FFF326300A0198C /* TodayRegisteredRequestModel.m */; };
 		2817D6771FEBB10000FB20EC /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D4D41FEBB10000FB20EC /* AuthcodeView.m */; };
-		2817D6811FEBB10000FB20EC /* dateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D4EB1FEBB10000FB20EC /* dateView.m */; };
-		2817D6821FEBB10000FB20EC /* dateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2817D4EC1FEBB10000FB20EC /* dateView.xib */; };
 		2817D6831FEBB10000FB20EC /* DCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D4EE1FEBB10000FB20EC /* DCNavTabBarController.m */; };
 		2817D72F1FEBB10000FB20EC /* JXPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D64E1FEBB10000FB20EC /* JXPopoverAction.m */; };
 		2817D7301FEBB10000FB20EC /* JXPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D6501FEBB10000FB20EC /* JXPopoverView.m */; };
@@ -177,6 +177,11 @@
 		287386CD1FF11614000E912E /* LogoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 287386CB1FF11614000E912E /* LogoVC.m */; };
 		287386CE1FF11614000E912E /* LogoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287386CC1FF11614000E912E /* LogoVC.xib */; };
 		287386D21FF119BE000E912E /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 287386D11FF119BE000E912E /* SSKeychain.m */; };
+		289532811FFE47AB00D6743C /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2895327B1FFE47AA00D6743C /* NSDate+Extension.m */; };
+		289532821FFE47AB00D6743C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2895327D1FFE47AA00D6743C /* UIView+Extension.m */; };
+		289532831FFE47AB00D6743C /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2895327F1FFE47AA00D6743C /* WSDatePickerView.m */; };
+		289532841FFE47AB00D6743C /* WSDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289532801FFE47AA00D6743C /* WSDatePickerView.xib */; };
+		289532871FFE4E6200D6743C /* RuKuanShenQingListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 289532861FFE4E6200D6743C /* RuKuanShenQingListRequestModel.m */; };
 		85F21B4A3BE633076CB35CF7 /* libPods-statisticalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A62A473455718056EEE5636 /* libPods-statisticalApp.a */; };
 /* End PBXBuildFile section */
 
@@ -198,11 +203,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280AE0681FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChuKuanShenQingListRequestModel.h; sourceTree = "<group>"; };
+		280AE0691FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChuKuanShenQingListRequestModel.m; sourceTree = "<group>"; };
+		280AE06B1FFF326300A0198C /* TodayRegisteredRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayRegisteredRequestModel.h; sourceTree = "<group>"; };
+		280AE06C1FFF326300A0198C /* TodayRegisteredRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayRegisteredRequestModel.m; sourceTree = "<group>"; };
 		2817D4D31FEBB10000FB20EC /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
 		2817D4D41FEBB10000FB20EC /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
-		2817D4EA1FEBB10000FB20EC /* dateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateView.h; sourceTree = "<group>"; };
-		2817D4EB1FEBB10000FB20EC /* dateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateView.m; sourceTree = "<group>"; };
-		2817D4EC1FEBB10000FB20EC /* dateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dateView.xib; sourceTree = "<group>"; };
 		2817D4ED1FEBB10000FB20EC /* DCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNavTabBarController.h; sourceTree = "<group>"; };
 		2817D4EE1FEBB10000FB20EC /* DCNavTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNavTabBarController.m; sourceTree = "<group>"; };
 		2817D64D1FEBB10000FB20EC /* JXPopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPopoverAction.h; sourceTree = "<group>"; };
@@ -518,6 +524,15 @@
 		287386CC1FF11614000E912E /* LogoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoVC.xib; sourceTree = "<group>"; };
 		287386D01FF119BE000E912E /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		287386D11FF119BE000E912E /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		2895327A1FFE47AA00D6743C /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		2895327B1FFE47AA00D6743C /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		2895327C1FFE47AA00D6743C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2895327D1FFE47AA00D6743C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2895327E1FFE47AA00D6743C /* WSDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
+		2895327F1FFE47AA00D6743C /* WSDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDatePickerView.m; sourceTree = "<group>"; };
+		289532801FFE47AA00D6743C /* WSDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSDatePickerView.xib; sourceTree = "<group>"; };
+		289532851FFE4E6200D6743C /* RuKuanShenQingListRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuKuanShenQingListRequestModel.h; sourceTree = "<group>"; };
+		289532861FFE4E6200D6743C /* RuKuanShenQingListRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuKuanShenQingListRequestModel.m; sourceTree = "<group>"; };
 		3895278E2F5E56D3BA05A967 /* Pods-statisticalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-statisticalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-statisticalApp/Pods-statisticalApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9A62A473455718056EEE5636 /* libPods-statisticalApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-statisticalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BE16E92E2320765A76A504 /* Pods-statisticalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-statisticalApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-statisticalApp/Pods-statisticalApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -560,6 +575,7 @@
 		2817D4C01FEBB10000FB20EC /* EncapsulationClass */ = {
 			isa = PBXGroup;
 			children = (
+				289532791FFE47AA00D6743C /* WSDaePickerView */,
 				287386CF1FF119BE000E912E /* SSKeychain */,
 				287386BD1FF0D862000E912E /* RationView */,
 				2817D7631FEBD7F200FB20EC /* HQPickerView */,
@@ -567,9 +583,6 @@
 				2817D73C1FEBB88700FB20EC /* zySheetPickerView.m */,
 				2817D4D31FEBB10000FB20EC /* AuthcodeView.h */,
 				2817D4D41FEBB10000FB20EC /* AuthcodeView.m */,
-				2817D4EA1FEBB10000FB20EC /* dateView.h */,
-				2817D4EB1FEBB10000FB20EC /* dateView.m */,
-				2817D4EC1FEBB10000FB20EC /* dateView.xib */,
 				2817D4ED1FEBB10000FB20EC /* DCNavTabBarController.h */,
 				2817D4EE1FEBB10000FB20EC /* DCNavTabBarController.m */,
 				2817D64C1FEBB10000FB20EC /* JXPopoverView */,
@@ -1332,6 +1345,8 @@
 		28596F901FEA4FE700DDB72E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				289532851FFE4E6200D6743C /* RuKuanShenQingListRequestModel.h */,
+				289532861FFE4E6200D6743C /* RuKuanShenQingListRequestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1359,6 +1374,8 @@
 		28596F931FEA4FF700DDB72E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				280AE0681FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.h */,
+				280AE0691FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1392,6 +1409,8 @@
 		28596F961FEA500500DDB72E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				280AE06B1FFF326300A0198C /* TodayRegisteredRequestModel.h */,
+				280AE06C1FFF326300A0198C /* TodayRegisteredRequestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1590,6 +1609,20 @@
 			path = SSKeychain;
 			sourceTree = "<group>";
 		};
+		289532791FFE47AA00D6743C /* WSDaePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				2895327A1FFE47AA00D6743C /* NSDate+Extension.h */,
+				2895327B1FFE47AA00D6743C /* NSDate+Extension.m */,
+				2895327C1FFE47AA00D6743C /* UIView+Extension.h */,
+				2895327D1FFE47AA00D6743C /* UIView+Extension.m */,
+				2895327E1FFE47AA00D6743C /* WSDatePickerView.h */,
+				2895327F1FFE47AA00D6743C /* WSDatePickerView.m */,
+				289532801FFE47AA00D6743C /* WSDatePickerView.xib */,
+			);
+			path = WSDaePickerView;
+			sourceTree = "<group>";
+		};
 		D43D4F3DD387AD4C9A0F22F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1669,7 +1702,7 @@
 				TargetAttributes = {
 					28596F351FEA09F300DDB72E = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					28596F4D1FEA09F300DDB72E = {
 						CreatedOnToolsVersion = 9.2;
@@ -1724,8 +1757,8 @@
 				2817D76B1FEBDCE500FB20EC /* TodayRegisteredVC.xib in Resources */,
 				287386C91FF1005C000E912E /* IdentifierVC.xib in Resources */,
 				2817D7701FEBDEF900FB20EC /* TodayRegisteredListCell.xib in Resources */,
+				289532841FFE47AB00D6743C /* WSDatePickerView.xib in Resources */,
 				2817D7471FEBD10100FB20EC /* ChuKuanShenQingListCell.xib in Resources */,
-				2817D6821FEBB10000FB20EC /* dateView.xib in Resources */,
 				28344A5F1FF4988100BBEC4E /* .gitignore in Resources */,
 				28596F431FEA09F300DDB72E /* Assets.xcassets in Resources */,
 				28596F851FEA226400DDB72E /* HListCVCell.xib in Resources */,
@@ -1819,12 +1852,14 @@
 				28344AB71FF4988100BBEC4E /* AccountResponse.m in Sources */,
 				287386B61FF0B2EB000E912E /* IncomeVC.m in Sources */,
 				28344AA41FF4988100BBEC4E /* investBusinessRQModel.m in Sources */,
+				289532871FFE4E6200D6743C /* RuKuanShenQingListRequestModel.m in Sources */,
 				287386941FF09E22000E912E /* TodayRegisteredDetailVC.m in Sources */,
 				287386A31FF0A812000E912E /* TodayRegisteredStatisticalVC.m in Sources */,
 				28344A851FF4988100BBEC4E /* WaiteReciveMoneyRCModel.m in Sources */,
 				28344AA21FF4988100BBEC4E /* DirectInvestInfoRQModel.m in Sources */,
 				28344A8C1FF4988100BBEC4E /* TransferInvestRCInfoModel.m in Sources */,
 				28344A8F1FF4988100BBEC4E /* NoticeRCModel.m in Sources */,
+				280AE06A1FFF1B5300A0198C /* ChuKuanShenQingListRequestModel.m in Sources */,
 				28596F841FEA226400DDB72E /* HListCVCell.m in Sources */,
 				2817D6831FEBB10000FB20EC /* DCNavTabBarController.m in Sources */,
 				28344A7C1FF4988100BBEC4E /* MyRepayWaiteInfoRCModel.m in Sources */,
@@ -1838,6 +1873,7 @@
 				28344A971FF4988100BBEC4E /* ForgetRQModel.m in Sources */,
 				28344AAA1FF4988100BBEC4E /* SafeCenterRQModel.m in Sources */,
 				28344A6F1FF4988100BBEC4E /* SandBoxPlistOperation.m in Sources */,
+				289532811FFE47AB00D6743C /* NSDate+Extension.m in Sources */,
 				28344A931FF4988100BBEC4E /* AccountRQModel.m in Sources */,
 				28344A7E1FF4988100BBEC4E /* RepayEdRCModel.m in Sources */,
 				28344AA11FF4988100BBEC4E /* PageMemberRQModel.m in Sources */,
@@ -1884,7 +1920,6 @@
 				28344ABE1FF4988100BBEC4E /* DirectinvestResponse.m in Sources */,
 				28596F731FEA0A1A00DDB72E /* HomePageVC.m in Sources */,
 				28344AB41FF4988100BBEC4E /* HttpTool.m in Sources */,
-				2817D6811FEBB10000FB20EC /* dateView.m in Sources */,
 				28344ABC1FF4988100BBEC4E /* TransferResponse.m in Sources */,
 				28344A7D1FF4988100BBEC4E /* ReciveMoneyRCModel.m in Sources */,
 				28344A941FF4988100BBEC4E /* ATransferInvestRQModel.m in Sources */,
@@ -1897,6 +1932,7 @@
 				28344A831FF4988100BBEC4E /* transferEdRCModel.m in Sources */,
 				287386CD1FF11614000E912E /* LogoVC.m in Sources */,
 				28344A6A1FF4988100BBEC4E /* UILabel+extention.m in Sources */,
+				289532831FFE47AB00D6743C /* WSDatePickerView.m in Sources */,
 				28344AB81FF4988100BBEC4E /* LoginResponse.m in Sources */,
 				28344A701FF4988100BBEC4E /* SecurityCodeView.m in Sources */,
 				28344AC91FF4988100BBEC4E /* UserData.m in Sources */,
@@ -1939,6 +1975,7 @@
 				28344AB01FF4988100BBEC4E /* enterpriseBorrowRQModel.m in Sources */,
 				28344A981FF4988100BBEC4E /* LoginRQModel.m in Sources */,
 				2817D7461FEBD10100FB20EC /* ChuKuanShenQingListCell.m in Sources */,
+				289532821FFE47AB00D6743C /* UIView+Extension.m in Sources */,
 				28344A7B1FF4988100BBEC4E /* MyRepayEdRCModel.m in Sources */,
 				28344A921FF4988100BBEC4E /* PersonBorrowRCModel.m in Sources */,
 				2817D76A1FEBDCE500FB20EC /* TodayRegisteredVC.m in Sources */,
@@ -1953,6 +1990,7 @@
 				287386A81FF0AA44000E912E /* ZaiXianShiWanVC.m in Sources */,
 				28344ACA1FF4988100BBEC4E /* SHAEncryption.m in Sources */,
 				28344A681FF4988100BBEC4E /* NSArray+extention.m in Sources */,
+				280AE06D1FFF326300A0198C /* TodayRegisteredRequestModel.m in Sources */,
 				28344A801FF4988100BBEC4E /* SafeModel.m in Sources */,
 				28344A791FF4988100BBEC4E /* MyBorrowRepayPlanRCModel.m in Sources */,
 				28344AA91FF4988100BBEC4E /* RePayPlanRQModel.m in Sources */,
@@ -2119,8 +2157,10 @@
 			baseConfigurationReference = 3895278E2F5E56D3BA05A967 /* Pods-statisticalApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRGT5K49ZV;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M8T572TAKX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskFramework",
@@ -2134,8 +2174,10 @@
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskUI/HDUIKit/3rdparty/DeviceHelper/HDVoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskUI/HDUIKit/3rdparty/DeviceHelper/HDVoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.statisticalApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongfu.statisticalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3434bb2f-6838-494d-9e13-8f15002e8021";
+				PROVISIONING_PROFILE_SPECIFIER = statisticalHocApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2145,8 +2187,10 @@
 			baseConfigurationReference = D2BE16E92E2320765A76A504 /* Pods-statisticalApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GRGT5K49ZV;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M8T572TAKX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskFramework",
@@ -2160,8 +2204,10 @@
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskUI/HDUIKit/3rdparty/DeviceHelper/HDVoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskUI/HDUIKit/3rdparty/DeviceHelper/HDVoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.statisticalApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongfu.statisticalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3434bb2f-6838-494d-9e13-8f15002e8021";
+				PROVISIONING_PROFILE_SPECIFIER = statisticalHocApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -49,8 +49,8 @@
 {
     if (!_backgroundScrollView)
     {
-        _backgroundScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, total_WIDTH, total_HEIGHT-45-64)];
-        _backgroundScrollView.contentSize=CGSizeMake(total_WIDTH*2, total_HEIGHT-45-64);
+        _backgroundScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, total_WIDTH, total_HEIGHT-55-64)];
+        _backgroundScrollView.contentSize=CGSizeMake(total_WIDTH*2, total_HEIGHT-55-64);
         _backgroundScrollView.backgroundColor=[UIColor clearColor];
         _backgroundScrollView.delegate=self;
         //    是否显示横向滚动条
@@ -75,8 +75,8 @@
     [_backgroundScrollView addSubview:_incomeVC.view];
     [_backgroundScrollView addSubview:_spendingVC.view];
     //    设置两个控制器的尺寸
-    _incomeVC.view.frame=CGRectMake(0, 0, total_WIDTH, total_HEIGHT-45-64);
-    _spendingVC.view.frame=CGRectMake(total_WIDTH, 0, total_WIDTH, total_HEIGHT-45-64);
+    _incomeVC.view.frame=CGRectMake(0, 0, total_WIDTH, total_HEIGHT-55-64);
+    _spendingVC.view.frame=CGRectMake(total_WIDTH, 0, total_WIDTH, total_HEIGHT-55-64);
 }
 
 //segmen控件按钮绑定的方法

@@ -12,10 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *stateKindLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startTimeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *endTimeBtn;
-@property (weak, nonatomic) IBOutlet UIButton *stateKindBtn;
 @property (weak, nonatomic) IBOutlet UIButton *searchBtn;
 
 @end

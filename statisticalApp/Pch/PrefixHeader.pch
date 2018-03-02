@@ -35,6 +35,9 @@
  */
 #define RGBA(r,g,b,a)    [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
 
+//处理空数据
+#define VerifyJsonValue(value) ({id tmp; if ([value isKindOfClass:[NSNull class]]) tmp = nil; else tmp = value; tmp;})
+
 //判断字符串是否为空
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
@@ -55,10 +58,14 @@
 
 #import <AFNetworking.h>
 #import <MJRefresh.h>
+#import <MJExtension.h>
 #import <SVProgressHUD.h>
 #import "PSGeneral.h"
 #import "zySheetPickerView.h"
 #import "HQPickerView.h"
-
+#import "HttpTool.h"
+#import "Header.h"
+#import "WSDatePickerView.h"
+#import "NSString+Helper.h"
 #endif /* PrefixHeader_pch */
 #endif

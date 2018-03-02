@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HZhangHuCVCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *zhangHuJinELabelNum;
+@property (weak, nonatomic) IBOutlet UIButton *zhangHuJinEBtn;
 
 @end

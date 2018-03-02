@@ -10,6 +10,8 @@
 #import "AFNetworking.h"
 #import "SHAEncryption.h"
 #import "AFHTTPSessionManager.h"
+#import "AESCrypt.h"
+#import "NSString+MD5.h"
 #define openKeyStr @"c67ecba48eb07165"
 
 @implementation HttpTool
@@ -20,8 +22,8 @@
     return [[self alloc] init];
 }
 
--(void)post:(NSString *)url parameters:(NSMutableDictionary *)parameters success:(void (^)(id json))success
-    failure:(void (^)(NSError *error))failure{
+-(void)post:(NSString *)url parameters:(NSMutableDictionary *)parameters swithSucess:(void(^)(NSDictionary *dic))success withFailed:(void(^)(NSString *error, int status))failed
+{
     
     //创建HTTP请求管理类对象
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -123,8 +125,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         
-        
-        
+        //请求失败的原因展示
+        [SVProgressHUD showErrorWithStatus:@"网络繁忙,请重试"];
         
         
     }];

@@ -290,7 +290,7 @@ static NSMutableDictionary *Parameters;
     NSDateFormatter*formatter=[[NSDateFormatter alloc]init];
     [formatter setDateFormat:[formatterStr length]==0?@"YYYY-MM-dd HH:mm:ss":formatterStr];
 //    时间戳转化为时间
-    NSDate*date=[NSDate dateWithTimeIntervalSince1970:[timestamp doubleValue]/1000];
+    NSDate*date=[NSDate dateWithTimeIntervalSince1970:[timestamp doubleValue]];
     NSString*dateStr=[formatter stringFromDate:date];
     return dateStr;
 }

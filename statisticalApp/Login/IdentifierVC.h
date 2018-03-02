@@ -10,5 +10,6 @@
 
 @interface IdentifierVC : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *IdentificationCodeTextField;
+@property (weak, nonatomic) IBOutlet UIView *textFiledView;
 
 @end

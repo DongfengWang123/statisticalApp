@@ -26,13 +26,14 @@ static CGFloat const foldLineWidth = 10.0;
 @implementation JXCircleRatioView
 
 
-- (instancetype)initWithFrame:(CGRect)frame andDataArray:(NSMutableArray *)dataArray CircleRadius:(CGFloat)circleRadius{
+- (instancetype)initWithFrame:(CGRect)frame andDataArray:(NSMutableArray *)dataArray CircleRadius:(CGFloat)circleRadius;
+{
     
     if (self = [super initWithFrame:frame]) {
         
         self.dataArray = dataArray;
         self.circleRadius = circleRadius;
-        
+     
     }
     return self;
 }
@@ -99,9 +100,10 @@ static CGFloat const foldLineWidth = 10.0;
     [arcPath stroke];
     
     //创建总收入label
+    JXCircleModel *model = self.dataArray[0];
     UILabel*shouRuLabel=[[UILabel alloc]init];
     shouRuLabel.frame=CGRectMake(self.bounds.size.width/2.0-whiteCircleRadius, self.bounds.size.height/2.0-whiteCircleRadius/2.0, whiteCircleRadius*2, 30);
-    shouRuLabel.text=@"总收入";
+    shouRuLabel.text=self.shouRuLabelStr;
     shouRuLabel.textAlignment=NSTextAlignmentCenter;
     shouRuLabel.font=[UIFont systemFontOfSize:17];
     [self addSubview:shouRuLabel];
@@ -109,7 +111,7 @@ static CGFloat const foldLineWidth = 10.0;
     //创建总收入值label
     UILabel*numLabel=[[UILabel alloc]init];
     numLabel.frame=CGRectMake(self.bounds.size.width/2.0-whiteCircleRadius, self.bounds.size.height/2.0-whiteCircleRadius/2.0+30, whiteCircleRadius*2, 30);
-    numLabel.text=[NSString stringWithFormat:@"%@",self.shouRuNumStr];
+    numLabel.text=[NSString stringWithFormat:@"%@",model.shouRuNumStr];
     numLabel.textAlignment=NSTextAlignmentCenter;
     numLabel.font=[UIFont systemFontOfSize:15];
     [self addSubview:numLabel];
@@ -169,6 +171,7 @@ static CGFloat const foldLineWidth = 10.0;
  */
 
 //画线
+
 -(void)addLineAndnumber:(UIColor *)color
         andCGContextRef:(CGContextRef)ctx
                    andX:(CGFloat)x

@@ -41,8 +41,7 @@ typedef NS_ENUM(NSUInteger, ResErrorCode) {
 ///实例化请求类
 +(instancetype)request;
 
--(void)post:(NSString *)url parameters:(NSMutableDictionary *)parameters success:(void (^)(id json))success
-                                                                  failure:(void (^)(NSError *error))failure;
+-(void)post:(NSString *)url parameters:(NSMutableDictionary *)parameters swithSucess:(void(^)(NSDictionary *dic))success withFailed:(void(^)(NSString *error, int status))failed;
 
 
 
