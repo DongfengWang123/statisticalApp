@@ -19,10 +19,10 @@
 
 
 ///接口根地址（正式中转地址-->更换服务器）
-//#define baseUrl(jointUrl) [NSString stringWithFormat:@"http://192.168.1.128/index.php/LottInterface_boss/%@",jointUrl]
+#define baseUrl(jointUrl) [NSString stringWithFormat:@"http://192.168.1.128/index.php/LottInterface_boss/%@",jointUrl]
 
 //外网
-#define baseUrl(jointUrl) [NSString stringWithFormat:@"http://cp.daili700.com/index.php/LottInterface_boss/%@",jointUrl]
+//#define baseUrl(jointUrl) [NSString stringWithFormat:@"http://cp.daili700.com/index.php/LottInterface_boss/%@",jointUrl]
 
 ///1、身份验证
 #define verify_Url @"verify?"

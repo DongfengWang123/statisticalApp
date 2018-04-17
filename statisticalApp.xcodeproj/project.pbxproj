@@ -23,7 +23,6 @@
 		2817D7421FEBBC3300FB20EC /* ChuKuanShenQingListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2817D7401FEBBC3300FB20EC /* ChuKuanShenQingListVC.xib */; };
 		2817D7461FEBD10100FB20EC /* ChuKuanShenQingListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D7441FEBD10100FB20EC /* ChuKuanShenQingListCell.m */; };
 		2817D7471FEBD10100FB20EC /* ChuKuanShenQingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2817D7451FEBD10100FB20EC /* ChuKuanShenQingListCell.xib */; };
-		2817D7661FEBD7F200FB20EC /* HQPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D7651FEBD7F200FB20EC /* HQPickerView.m */; };
 		2817D76A1FEBDCE500FB20EC /* TodayRegisteredVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D7681FEBDCE500FB20EC /* TodayRegisteredVC.m */; };
 		2817D76B1FEBDCE500FB20EC /* TodayRegisteredVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2817D7691FEBDCE500FB20EC /* TodayRegisteredVC.xib */; };
 		2817D76F1FEBDEF900FB20EC /* TodayRegisteredListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2817D76D1FEBDEF900FB20EC /* TodayRegisteredListCell.m */; };
@@ -136,6 +135,7 @@
 		28344AC81FF4988100BBEC4E /* HelpCenterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 28344A581FF4988100BBEC4E /* HelpCenterResponse.m */; };
 		28344AC91FF4988100BBEC4E /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 28344A5B1FF4988100BBEC4E /* UserData.m */; };
 		28344ACA1FF4988100BBEC4E /* SHAEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 28344A5E1FF4988100BBEC4E /* SHAEncryption.m */; };
+		283B868D20746C5D00079215 /* HQPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283B868C20746C5D00079215 /* HQPickerView.m */; };
 		28596F3B1FEA09F300DDB72E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28596F3A1FEA09F300DDB72E /* AppDelegate.m */; };
 		28596F3E1FEA09F300DDB72E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28596F3D1FEA09F300DDB72E /* ViewController.m */; };
 		28596F411FEA09F300DDB72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28596F3F1FEA09F300DDB72E /* Main.storyboard */; };
@@ -233,8 +233,6 @@
 		2817D7431FEBD10100FB20EC /* ChuKuanShenQingListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChuKuanShenQingListCell.h; sourceTree = "<group>"; };
 		2817D7441FEBD10100FB20EC /* ChuKuanShenQingListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChuKuanShenQingListCell.m; sourceTree = "<group>"; };
 		2817D7451FEBD10100FB20EC /* ChuKuanShenQingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChuKuanShenQingListCell.xib; sourceTree = "<group>"; };
-		2817D7641FEBD7F200FB20EC /* HQPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQPickerView.h; sourceTree = "<group>"; };
-		2817D7651FEBD7F200FB20EC /* HQPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQPickerView.m; sourceTree = "<group>"; };
 		2817D7671FEBDCE500FB20EC /* TodayRegisteredVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayRegisteredVC.h; sourceTree = "<group>"; };
 		2817D7681FEBDCE500FB20EC /* TodayRegisteredVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayRegisteredVC.m; sourceTree = "<group>"; };
 		2817D7691FEBDCE500FB20EC /* TodayRegisteredVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayRegisteredVC.xib; sourceTree = "<group>"; };
@@ -455,6 +453,8 @@
 		28344A5B1FF4988100BBEC4E /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		28344A5D1FF4988100BBEC4E /* SHAEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAEncryption.h; sourceTree = "<group>"; };
 		28344A5E1FF4988100BBEC4E /* SHAEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAEncryption.m; sourceTree = "<group>"; };
+		283B868B20746C5D00079215 /* HQPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQPickerView.h; sourceTree = "<group>"; };
+		283B868C20746C5D00079215 /* HQPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQPickerView.m; sourceTree = "<group>"; };
 		28596F361FEA09F300DDB72E /* statisticalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = statisticalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28596F391FEA09F300DDB72E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28596F3A1FEA09F300DDB72E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -575,10 +575,10 @@
 		2817D4C01FEBB10000FB20EC /* EncapsulationClass */ = {
 			isa = PBXGroup;
 			children = (
+				283B868A20746C5D00079215 /* HQPickerView */,
 				289532791FFE47AA00D6743C /* WSDaePickerView */,
 				287386CF1FF119BE000E912E /* SSKeychain */,
 				287386BD1FF0D862000E912E /* RationView */,
-				2817D7631FEBD7F200FB20EC /* HQPickerView */,
 				2817D73B1FEBB88700FB20EC /* zySheetPickerView.h */,
 				2817D73C1FEBB88700FB20EC /* zySheetPickerView.m */,
 				2817D4D31FEBB10000FB20EC /* AuthcodeView.h */,
@@ -617,16 +617,6 @@
 				2817D65F1FEBB10000FB20EC /* RCSegmentView.m */,
 			);
 			path = RCSegmentView;
-			sourceTree = "<group>";
-		};
-		2817D7631FEBD7F200FB20EC /* HQPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				2817D7641FEBD7F200FB20EC /* HQPickerView.h */,
-				2817D7651FEBD7F200FB20EC /* HQPickerView.m */,
-			);
-			name = HQPickerView;
-			path = "../../../../Downloads/HQPickerView 2/HQPickerView/HQPickerView/HQPickerView";
 			sourceTree = "<group>";
 		};
 		283449661FF4988000BBEC4E /* encryptionAndRequest */ = {
@@ -1120,6 +1110,15 @@
 				28344A5E1FF4988100BBEC4E /* SHAEncryption.m */,
 			);
 			path = SHA;
+			sourceTree = "<group>";
+		};
+		283B868A20746C5D00079215 /* HQPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				283B868B20746C5D00079215 /* HQPickerView.h */,
+				283B868C20746C5D00079215 /* HQPickerView.m */,
+			);
+			path = HQPickerView;
 			sourceTree = "<group>";
 		};
 		28596F2D1FEA09F300DDB72E = {
@@ -1870,6 +1869,7 @@
 				2817D7341FEBB10000FB20EC /* NSString+Helper.m in Sources */,
 				28344AA51FF4988100BBEC4E /* InvestDirectRCModel.m in Sources */,
 				2817D7361FEBB10000FB20EC /* PSGeneral.m in Sources */,
+				283B868D20746C5D00079215 /* HQPickerView.m in Sources */,
 				28344A971FF4988100BBEC4E /* ForgetRQModel.m in Sources */,
 				28344AAA1FF4988100BBEC4E /* SafeCenterRQModel.m in Sources */,
 				28344A6F1FF4988100BBEC4E /* SandBoxPlistOperation.m in Sources */,
@@ -1953,7 +1953,6 @@
 				28344A741FF4988100BBEC4E /* BusinessRecordsRCModel.m in Sources */,
 				28344AA01FF4988100BBEC4E /* CheckVerifyCodeRQModel.m in Sources */,
 				28344AC21FF4988100BBEC4E /* SafeCenterResponse.m in Sources */,
-				2817D7661FEBD7F200FB20EC /* HQPickerView.m in Sources */,
 				287386C81FF1005C000E912E /* IdentifierVC.m in Sources */,
 				28344AAC1FF4988100BBEC4E /* TransferInvestRQModel.m in Sources */,
 				28344AB31FF4988100BBEC4E /* BaseRequest.m in Sources */,
@@ -2158,7 +2157,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8T572TAKX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2166,7 +2165,7 @@
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskFramework",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HyphenateFramework",
 				);
-				GCC_PREFIX_HEADER = /Users/ybmac/Desktop/statisticalApp/statisticalApp/Pch/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/statisticalApp/Pch/PrefixHeader.pch";
 				INFOPLIST_FILE = statisticalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2176,8 +2175,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongfu.statisticalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3434bb2f-6838-494d-9e13-8f15002e8021";
-				PROVISIONING_PROFILE_SPECIFIER = statisticalHocApp;
+				PROVISIONING_PROFILE = "312fbaa7-8d9c-42e4-92ef-ee0d7586fffb";
+				PROVISIONING_PROFILE_SPECIFIER = statisticaDevelopApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2188,7 +2187,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8T572TAKX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2196,7 +2195,7 @@
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HelpDeskFramework",
 					"$(PROJECT_DIR)/statisticalApp/EncapsulationClass/HyphenateFramework",
 				);
-				GCC_PREFIX_HEADER = /Users/ybmac/Desktop/statisticalApp/statisticalApp/Pch/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/statisticalApp/Pch/PrefixHeader.pch";
 				INFOPLIST_FILE = statisticalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2206,8 +2205,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongfu.statisticalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3434bb2f-6838-494d-9e13-8f15002e8021";
-				PROVISIONING_PROFILE_SPECIFIER = statisticalHocApp;
+				PROVISIONING_PROFILE = "312fbaa7-8d9c-42e4-92ef-ee0d7586fffb";
+				PROVISIONING_PROFILE_SPECIFIER = statisticaDevelopApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
